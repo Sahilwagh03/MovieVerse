@@ -29,7 +29,7 @@ export const MovieList = () => {
         <div className="list__cards">
             {
                 movieList.map(movie=>(
-                    <Card movie={movie} />
+                    <Card movie={movie} key={movieList.indexOf(movie)} />
                 ))
             }
         </div>
