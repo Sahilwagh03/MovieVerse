@@ -25,9 +25,9 @@ export const AnimeCard = ({anime}) => {
             </SkeletonTheme>
         </div>
         :
-        <Link to={`/animes/bypopularity`} style={{textDecoration:'none' ,color:'white'}}>
+        <Link to={`/anime/${anime.mal_id}`} style={{textDecoration:'none' ,color:'white'}}>
         <div className="cards" >
-            <img className='cards__img' src={`${anime ? anime.images.jpg.image_url : ''}`}/>
+            <img className='cards__img2' src={`${anime ? anime.images.jpg.image_url : ''}`}/>
             <div className="cards__overlay">
                 <div className="card__title">{anime?anime.title_english:''}</div>
                 <div className="card__runtime">

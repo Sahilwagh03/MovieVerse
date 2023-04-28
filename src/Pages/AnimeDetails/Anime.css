@@ -1,0 +1,58 @@
+h1{
+    display: inline-block;
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+        cursor: pointer;
+        background:linear-gradient( to right, #A855F7, #27AE60);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all .4s ease-in-out;
+}
+.detail{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.details{
+    background-color: rgb(35, 34, 34);
+    border-radius: 20px;
+    padding: 2rem;
+    border: 5px solid #404041;
+}
+.title{
+    display: inline-block;
+    margin: 3rem 0;
+    font-size: 2rem;
+    cursor: pointer;
+    background:linear-gradient( to right, #A855F7 23%, #27AE60);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.description{
+    margin-top: 2rem;
+    color: #6c7983;
+    line-height: 1.7rem;
+
+}
+button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #27AE60;
+    font-weight: 600;
+}
+.anime-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+p{
+    display: flex;
+    gap: 1rem;
+}
+p span:first-child{
+    font-weight: 600;
+    color: #ffffff;
+}
