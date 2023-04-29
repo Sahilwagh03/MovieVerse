@@ -19,7 +19,8 @@
 }
 
 .cards__img2{
-    height: initial;
+    height: 300px;
+    width: 200px;
 }
 
 .cards__overlay {

@@ -8,7 +8,49 @@ margin:  2.5rem;
 }
 
 .list__cards {
-    display: flex;
-    flex-wrap: wrap ;
+    display: grid;
+    grid-template-columns: repeat(4,200px);
+    gap: 40px;
     justify-content: center;
+}
+
+
+
+/* =============== BREAKPOINTS =============== */
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .list__cards {
+        display: grid;
+        grid-template-columns: repeat(2,335px);
+        gap: 20px;
+        justify-content: center;
+    }
+    .cards__img {
+        height: 500px;
+    }
+    .cards {
+        display: inline-block;
+        transition: transform .2s;
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 0.19rem;
+        cursor: pointer;
+        min-width: 335px;
+        height: 500px;
+        z-index: 0;
+        border: 1px solid rgb(99, 99, 99);
+    }
+}
+
+/* For medium devices */
+@media screen and (max-width: 576px) {
+    
+    
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    
+    
 }
