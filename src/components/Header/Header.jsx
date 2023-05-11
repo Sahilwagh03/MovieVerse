@@ -16,5 +16,6 @@ export const Header = () => {
             <Link to="/animes/upcoming" className='text-style'><span>Upcoming Animes</span></Link>
         </div> 
     </div>
+    
   )
 }

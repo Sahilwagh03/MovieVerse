@@ -9,11 +9,6 @@ export const AnimeList = () => {
 
     const [AnimeLists , setAnimeLists]=useState([]);
     
-    // useEffect(()=>{
-    //     fetch(``)
-    //     .then(res => res.json())
-    //     .then(result => setAnimeLists(result.data))
-    // },[])
 
     useEffect(()=>{
         getData()
