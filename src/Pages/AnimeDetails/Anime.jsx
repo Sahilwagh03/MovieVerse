@@ -81,7 +81,13 @@ export const Anime = () => {
             </iframe>
           }
         </div>
-        <h3 className='title-characters'>Characters</h3>
+        {
+          Characters.length<=0 ? 
+          ""
+          :
+          <h3 className='title-characters'>Characters</h3>
+        }
+        {Characters.length<=0 ? "":
         <div className="characters">
           {LoadMore ? (
             Characters?.map((character, index) => {
@@ -112,9 +118,10 @@ export const Anime = () => {
             )
           }
           <div className="LoadMore">
-            <button className='LoadMore-btn' onClick={() => setLoadMore(!LoadMore)}>{LoadMore ? "Load Less" : "Load More"}</button>
+            <button className='LoadMore-btn' onClick={() => setLoadMore(!LoadMore)}>{Characters.length <= 0 ?"":(LoadMore  ? "Load Less" : "Load More")}</button>
           </div>
         </div>
+      }
       </div>
     </>
   )
