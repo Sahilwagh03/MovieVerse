@@ -16,14 +16,15 @@ export const Anime = () => {
       .then(res => res.json())
       .then(result => {
         setAnimeData(result.data)
-        console.log(result.data)
       })
   }
 
   const getCharacters = () => {
     fetch(`https://api.jikan.moe/v4/anime/${id}/characters`)
       .then(res => res.json())
-      .then(result => setCharacters(result.data))
+      .then(result =>{
+        setCharacters(result.data)
+      }) 
   }
 
   useEffect(() => {

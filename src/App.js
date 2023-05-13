@@ -7,6 +7,7 @@ import Movie from './Pages/MovieDetails/Movie'
 import { AnimeCard } from './components/AnimeCard/AnimeCard';
 import { AnimeList } from './components/AnimeList/AnimeList';
 import {Anime} from './Pages/AnimeDetails/Anime'
+import { CharacterGallery } from './Pages/CharacterGallery/CharacterGallery';
 function App() {
   return (
     <div className="App">
@@ -19,6 +20,7 @@ function App() {
                 <Route path="animes/:type"element={<AnimeList />}></Route>
                 <Route path="/*" element={<h1>Error Page</h1>}></Route>
                 <Route path='anime/:id' element={<Anime/>}></Route>
+                <Route path='/character/:mal_id' element={<CharacterGallery/>}></Route>
       </Routes>
       </BrowserRouter>
     </div>

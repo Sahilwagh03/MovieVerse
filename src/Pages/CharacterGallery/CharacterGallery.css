@@ -1,0 +1,57 @@
+.small_images{
+    display: grid;
+    grid-template-columns: repeat(4,200px);
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.small_images img{
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+
+.large_image{
+    display: grid;
+    place-content: center;
+    
+}
+.large_image img {
+    border: 20px solid white;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =============== BREAKPOINTS =============== */
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .large_image img {
+        border: 20px solid white;
+        border-radius: 20px;
+        width: 500px;
+    }
+    .small_images {
+        display: grid;
+        grid-template-columns: repeat(3,250px);
+        gap: 30px;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .small_images img {
+        width: 250px;
+        height: 250px;
+    }
+}
