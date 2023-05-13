@@ -125,24 +125,56 @@ iframe{
     text-decoration: none;
     color: wheat;
 }
+.LoadMore-btn{
+    font-size: 2rem;
+}
+.LoadMore{
+    display: flex;
+}
 
 /* =============== BREAKPOINTS =============== */
 /* For large devices */
 @media screen and (max-width: 992px) {
     .detail {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         column-gap: 2rem;
+        row-gap: 40px;
+    }
+    .Anime-poster-img{
+        width: -webkit-fill-available;
+    }
+    .anime-details{
+        font-size: x-large;
+        text-align: center;
+    }
+    .anime_description{
+        font-size: 2.5rem;
+        line-height: normal;
+    }
+    .readMore{
+        font-size: 2.5rem;
     }
     .characters{
         display: grid;
-        grid-template-columns: repeat(3,200px);
+        grid-template-columns: repeat(1,540px);
         place-content: center;
-        gap: 50px;
+        gap: 100px;
         padding: 2rem;
         border-radius: 20px;
         margin: 30px 50px;
         border: 5px solid #404041;
         
+    }
+    .character-image{
+        width: 520px;
+        height: auto;
+    }
+    .LoadMore-btn{
+        font-size: 3rem;
+    }
+    .LoadMore{
+        display: grid;
+        place-content: center;
     }
 }
