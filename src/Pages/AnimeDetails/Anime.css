@@ -83,10 +83,9 @@ p span:first-child{
 
 iframe{
     outline: none;
-    border: 5px solid #e5e7eb;
+    border: 5px solid #404041;
     padding: 1.5rem;
     border-radius: 10px;
-    background-color: #ffff;
 }
 
 /* Character CSS */
